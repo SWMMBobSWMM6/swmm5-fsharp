@@ -1,0 +1,40 @@
+== printf, strtod, sscanf (tools/crt/test/mkfmt.c)
+  f %#g arg=412e847f00000000  glibc=312e652b3036  fsharp=312e3030303030652b3036
+printf %f: 1082106 cases, 1 differ
+printf %d: 84000 cases, 0 differ
+printf %ld: 28000 cases, 0 differ
+printf %s: 81 cases, 0 differ
+strtod: 200052 cases, 0 differ
+sscanf: 13 cases, 0 differ
+1 of 1394252 cases differ
+== math: random arguments over SWMM's ranges (1000000 per function)
+exp    0 of 1000016 differ, 0 NaN sign
+log    0 of 1000016 differ, 0 NaN sign
+log10  0 of 1000016 differ, 0 NaN sign
+pow    0 of 1000272 differ, 0 NaN sign
+sin    0 of 1000016 differ, 0 NaN sign
+cos    0 of 1000016 differ, 0 NaN sign
+tan    0 of 1000016 differ, 0 NaN sign
+asin   0 of 1000016 differ, 0 NaN sign
+acos   0 of 1000016 differ, 0 NaN sign
+atan   0 of 1000016 differ, 0 NaN sign
+all: 0 of 10000416 differ
+== math: edge cases
+exp    0 of 300000 differ, 0 NaN sign
+log    0 of 200000 differ, 0 NaN sign
+log10  0 of 300000 differ, 0 NaN sign
+pow    0 of 700000 differ, 0 NaN sign
+sin    0 of 300000 differ, 0 NaN sign
+cos    0 of 300000 differ, 0 NaN sign
+tan    0 of 300000 differ, 0 NaN sign
+asin   0 of 300000 differ, 0 NaN sign
+acos   0 of 300000 differ, 0 NaN sign
+atan   0 of 300000 differ, 0 NaN sign
+all: 0 of 3300000 differ
+== sqrt, floor, ceil, fabs (mkexact.c)
+sqrt   0 of 1000028 differ, 0 NaN sign
+floor  0 of 1000028 differ, 0 NaN sign
+ceil   0 of 1000028 differ, 0 NaN sign
+fabs   0 of 1000028 differ, 0 NaN sign
+all: 0 of 4000112 differ
+exit 0

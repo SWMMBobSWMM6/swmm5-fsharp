@@ -1,0 +1,4 @@
+#!/bin/sh
+# runswmm - the F# port's command line: dotnet runs bin/runswmm.dll (built by build.sh).
+#   fsharp/runswmm model.inp model.rpt [model.out]
+exec dotnet "$(dirname "$0")/bin/runswmm.dll" "$@"

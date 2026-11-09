@@ -1,0 +1,2 @@
+start Sun Nov  8 20:59:15 EST 2026  engine /tmp/claude-0/-home-claude/9f3dde4c-f353-52c4-b476-e410dd8d4e21/scratchpad/fsv/fsharp/runswmm_saves.sh  ids /home/claude/swmm5-ports/fsharp/gate/ids_all.txt
+end   Sun Nov  8 21:05:39 EST 2026  rc 0

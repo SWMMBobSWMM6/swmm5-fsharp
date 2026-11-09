@@ -1,0 +1,7 @@
+fs_1     480 models  PASS 480      372 s
+all      480 models (480 distinct)  PASS 480      372 s
+      29.3 s  EPA/72_H&H_Elements(2).inp
+      23.3 s  Hydrology/SCANLON.inp
+      12.1 s  Hydrology/sewer_rdii_problem.inp
+       8.6 s  Hydrology/27_Subs_Horton.inp
+       8.4 s  EPA/attenuation_KW_High_CE.inp

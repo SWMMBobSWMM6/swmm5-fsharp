@@ -1,0 +1,2 @@
+start Sun Nov  8 20:39:28 EST 2026  engine /home/claude/swmm5-ports/fsharp/runswmm_saves.sh  ids /home/claude/swmm5-ports/fsharp/gate/ids_all.txt
+end   Sun Nov  8 20:56:59 EST 2026  rc 0

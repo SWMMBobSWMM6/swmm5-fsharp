@@ -1,0 +1,26 @@
+# fsharp/test/intcheck.c (gcc -O2) and fsharp/test/intcheck.fsx (dotnet fsi): identical output
+-7 / 2 = -3, % = -1
+7 / -2 = -3, % = 1
+-7 / -2 = 3, % = -1
+7 / 2 = 3, % = 1
+-2147483647 / 2 = -1073741823, % = -1
+5 / -3 = -1, % = 2
+nan: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+-nan: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+inf: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+-inf: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+3e+09: (int) -2147483648 (long) 3000000000 (unsigned) 3000000000
+-3e+09: (int) -2147483648 (long) -3000000000 (unsigned) 1294967296
+2.14748e+09: (int) 2147483647 (long) 2147483647 (unsigned) 2147483647
+-2.14748e+09: (int) -2147483648 (long) -2147483648 (unsigned) 2147483648
+-2.14748e+09: (int) -2147483648 (long) -2147483649 (unsigned) 2147483647
+-0.5: (int) 0 (long) 0 (unsigned) 0
+1e+19: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+-1e+19: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+4e+09: (int) -2147483648 (long) 4000000000 (unsigned) 4000000000
+9.3e+18: (int) -2147483648 (long) -9223372036854775808 (unsigned) 0
+300: (char) 44 (unsigned char) 44 (short) 300 (unsigned) 300 (unsigned long) 300
+-129: (char) 127 (unsigned char) 127 (short) -129 (unsigned) 4294967167 (unsigned long) 18446744073709551487
+255: (char) -1 (unsigned char) 255 (short) 255 (unsigned) 255 (unsigned long) 255
+65537: (char) 1 (unsigned char) 1 (short) 1 (unsigned) 65537 (unsigned long) 65537
+-1: (char) -1 (unsigned char) 255 (short) -1 (unsigned) 4294967295 (unsigned long) 18446744073709551615
