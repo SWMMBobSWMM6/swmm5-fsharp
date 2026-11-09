@@ -6,7 +6,7 @@
 # Writes gate/NAME_run.txt and fsharp/gate/NAME_start.txt (start and end times). Written by Claude (Anthropic).
 set -u
 H=$(cd "$(dirname "$0")" && pwd); ROOT=$(cd "$H/../.." && pwd); G=$ROOT/gate
-LOCK=/tmp/claude-0/-home-claude/9f3dde4c-f353-52c4-b476-e410dd8d4e21/scratchpad/corpus.lock
+LOCK=${SWMM_GATE_LOCK:-${TMPDIR:-/tmp}/swmm5-gate.lock}  # one corpus run at a time
 NAME=$1; IDS=$(readlink -f "$2"); WAIT=${3:-4800}
 case "$NAME" in js_*|fs_*) ;; *) echo "run names start with js_ or fs_"; exit 2;; esac
 ENGINE=${ENGINE:-$ROOT/fsharp/runswmm_saves.sh}
